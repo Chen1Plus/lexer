@@ -1,8 +1,5 @@
-rm build/lexer
-rm build/lex.yy.c
-
-flex -o build/lex.yy.c lexer.l
-gcc build/lex.yy.c -o build/lexer
+make clean
+make lexer
 
 NC='\033[0m'
 RED='\033[0;31m'
